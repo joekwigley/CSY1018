@@ -1,0 +1,496 @@
+/* page default reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Structure */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+.nav {
+  padding: 20px;
+  background: rgb(20, 20, 20);
+}
+
+.footer {
+  padding: 0.3em;
+  background: rgba(5, 5, 5, 0.8);
+  text-align: center;
+  border-top: 5px solid rgb(143, 143, 143);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.index-main {
+  padding: 1em;
+  background: url('images/outside2.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+.glossary-main {
+  padding: 1em;
+  background: url('images/screen7.jpeg') no-repeat center fixed;
+  background-size: cover;
+}
+
+
+/* Navigation Bar */
+
+ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+.navigation li {
+  display: inline;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navigation li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li a:hover {
+  color: #976e5a
+}
+
+.navigation li:last-child {
+  border-right: none;
+}
+
+li.main-page a {
+  font-weight: bold;
+  color: #976e5a
+}
+
+/* Headings, Paragraphs & Content */
+
+/* Index */
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 400px;
+  background-color: rgba(30,40,45, 0.8);
+  margin-left: 100px;
+  display: flex;
+  text-align: left;
+  z-index: 1;
+}
+
+.review-container {
+  width: 400px;
+  height: 100%;
+  margin-left: 100px;
+  background-color: rgba(30,40,45, 0.8);
+}
+
+.reviews {
+  height: 100%;
+}
+
+.index-text {
+  color: rgb(202, 201, 201);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  margin: 20px 20px 0 20px;
+}
+
+.meet {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.about-links {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 26px;
+}
+
+.contact {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: rgb(202, 201, 201);
+  padding-top: 40px;
+}
+
+form {
+  width: 50%;
+}
+
+.names {
+  color: rgb(202, 201, 201);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  padding-right: 35px;
+}
+
+.name-box {
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  width: 30%;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  height: 1.3em;
+  padding: 5px 15px;
+  margin: 5px 0 10px 0;
+}
+
+
+.ym {
+  color: rgb(202, 201, 201);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  padding-right: 35px;
+}
+
+.message {
+  height: 20%;
+  width: 28%;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  margin-top: -20px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  padding-right: 35px;
+  margin-left: 20px;
+}
+
+.send {
+  margin-top: -15px;
+  width: 18%;
+  height: 5%;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  background-color: #976e5a;
+
+}
+
+
+
+/* Intelligent Footer */
+
+.intel-footer {
+	bottom: 0;
+	position: fixed;
+  width: 100%;
+  height: 2em;
+  margin: 0 auto;
+  transition: all 3s ease;
+	z-index: 2;
+}
+ 
+.intel-footer .fa-arrow-circle-up {   /* Code Forked From Code-Pen in Liz's Lecture. Code changed and tweaked to my requirements */
+  font-size: 2em;
+	margin: 0 auto;
+	position: relative;
+  transition: all 1s ease;
+  color: #976e5a;
+}
+
+.intel-footer:hover {
+  transition: all 1s ease;
+	height: 25em;
+}
+
+.intel-footer .footer-container{
+	margin-top: 5px;
+	width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex; 
+  justify-content: center;
+  background-color: rgb(30,40,45);
+}
+
+
+/* Glossary */
+
+p {
+  color: black;
+}
+
+table {
+  position: relative;
+  width: 86%;
+  margin: auto;
+  background-color:rgb(241, 241, 241);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+table, th, td {
+ border-right: 2px solid #E5E4E2;
+ border-bottom: 2px solid #E5E4E2;
+ border-collapse: collapse;
+ font-family: Helvetica, sans-serif;
+ 
+}
+
+table, th, td:last-child {
+ border-right: none;
+}
+
+th {
+ background-color: rgb(20, 20, 20);
+ color: #E5E4E2;
+ text-align: center;
+ font-size: 25px;
+ padding: 20px;
+ font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+ font-weight: bold;
+}
+
+td {
+ text-align: center;
+ padding: 15px;
+ height: 3vh;
+ width: 10vw;
+}
+
+td a {
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+ font-size: 16px;
+}
+
+td a:hover {
+ font-size: 20px;
+ color: #976e5a;
+}
+
+h6 {
+  float: left;
+  font-size: 10px;
+  color: rgb(143, 143, 143);
+  text-align: left;
+  line-height: 14px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Media Queries */
+/* Mobile Device */
+
+@media (max-width: 30em) {
+  .glossary-main, .index-main {
+    flex: 1 0 auto;
+  }
+}
+
+
+@media (min-width: 30em) {
+  .nav {
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+  
+  .glossary-main, .index-main{
+    flex: 1 1 auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .glossary-main, .index-main {
+    flex: 1 0 auto;
+  }
+  .nav {
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .navigation li {
+    display: block;
+    text-align: center;
+  }
+
+/* Index */
+  .index-main {
+    background: url('images/outside320480.jpg') no-repeat center fixed;
+    background-size: cover;
+  }
+  .container {
+    margin: auto;
+    height: 100%;
+    width: 280px;
+  }
+
+  .index-text {
+    font-size: 14px;
+  }
+
+  .about-links {
+    font-size: 22px;
+  }
+
+  .meet {
+    font-size: 24px;
+  }
+
+  .review-container {
+    width: 280px;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(30,40,45, 0.8);
+  }
+
+  .reviews {
+    width: 95%;
+  }
+
+  .intel-footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 2em;
+    margin: 0 auto;
+    transition: all 3s ease;
+    z-index: 2;
+  }
+     
+  .intel-footer .fa-arrow-circle-up {   /* Code Forked From Code-Pen in Liz's Lecture. Code changed and tweaked to my requirements */
+    font-size: 2em;
+    margin: 0 auto;
+    position: relative;
+    transition: all 1s ease;
+    color: #976e5a;
+    visibility: hidden;
+    
+  }
+    
+  .intel-footer:hover {
+    transition: all 3s ease;
+    height: 20em;
+  }
+    
+  .intel-footer .footer-container {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgb(30,40,45);
+  }
+
+  form {
+    width: 80%;
+  }
+  
+  .names {
+    font-size: 16px;
+    padding-right: 35px;
+  }
+  
+  .name-box {
+    font-size: 12px;
+    width: 30%;
+ 
+  }
+  
+  .ym {
+    color: rgb(202, 201, 201);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    padding-right: 30px;
+    margin-left: 10px;
+  }
+  
+  .message {
+    height: 20%;
+    width: 28%;
+    padding: 15px;
+    margin-top: -20px;
+    font-size: 12px;
+    padding-right: 35px;
+    margin-left: 20px;
+  }
+  
+  .send {
+    margin-top: -15px;
+    width: 18%;
+    height: 5%;
+    font-size: 14px;
+    margin-left: 40px;  
+  }
+
+/* Glossary */
+  .glossary-main {
+    background: url('images/screen7320480.jpeg') no-repeat center fixed;
+    background-size: cover;
+  }
+  .table {
+    width: 0%;
+    margin: auto;
+  }
+
+  td {
+    text-align: center;
+    padding: 2px;
+    height: 3vh;
+    width: 10vw;
+   }
+   
+  td a {
+    font-size: 10px;
+    line-height: 11px;
+ }
+
+  th {
+    font-size: 15px;
+    padding: 1px;
+  }
+
+  td a:hover {
+    font-size: 10px;
+    color: #976e5a;
+   }
+
+   h6 {
+    visibility: hidden;
+   }
+
+   .footer {
+    padding: 0em;
+}
+
+}
+

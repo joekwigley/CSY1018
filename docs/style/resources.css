@@ -1,0 +1,278 @@
+/* page default reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Structure */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+.nav {
+    padding: 20px;
+    background: rgb(20, 20, 20);
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 0.3em;
+    background: rgba(5, 5, 5, 0.8);
+    text-align: center;
+    border-top: 5px solid rgb(143, 143, 143);
+    margin-top: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+.navigation li {
+  display: inline;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navigation li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li a:hover {
+  color: #976e5a
+}
+
+.navigation li:last-child {
+  border-right: none;
+}
+
+li.main-page a {
+  font-weight: bold;
+  color: #976e5a
+}
+/* Headings, Paragraphs & Content */
+
+ /* grid content */
+
+ .grid {
+    width: 100%;
+    height: 100%;
+    display: grid;  
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 10%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2%;
+  }
+  
+  .left {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .ca {
+    height: 65px;
+    padding-bottom: 75px;
+    position: relative;
+    top: 30px;
+  }
+  
+  .gimp {
+    height: 120px;
+    padding-bottom: 10px;
+  }
+  
+  .vc {
+    height: 120px;
+    padding-bottom: 20px;
+  }
+  
+  .middle {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .validator {
+    height: 120px;
+    padding-bottom: 20px;
+  }
+  
+  .ct {
+    height: 120px;
+    padding-bottom: 10px;
+  }
+  
+  .cp {
+    height: 110px;
+    padding-bottom: 30px;
+  }
+  
+  .right {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .handbook {
+    height: 120px;
+    padding-bottom: 20px;
+  }
+  
+  .dev {
+    height: 120px;
+    padding-bottom: 10px;
+  }
+  
+  .cw {
+    height: 120px;
+    padding-bottom: 20px;
+  }
+  
+  .alink {  
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  .alink:hover {
+    opacity: 0.3;
+  }
+
+  h6 {
+    float: left;
+    font-size: 10px;
+    color: rgb(143, 143, 143);
+    text-align: left;
+    line-height: 14px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  /* Media Queries */
+  /* Mobile Device */
+
+
+  @media (max-width: 30em) {
+    .main {
+      flex: 1 0 auto;
+    }
+  }
+  
+  
+  @media (min-width: 30em) {
+    .nav {
+      display: block;
+    }
+  
+    .wrapper {
+      flex-direction: row;
+    }
+    
+    .main {
+      flex: 1 1 auto;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .main {
+      flex: 1 0 auto;
+    }
+    .nav {
+      display: block;
+    }
+  
+    .wrapper {
+      flex-direction: row;
+    }
+
+    .footer {
+      padding: 0em;
+      margin-top: 50px;
+  }  
+  
+    .navigation li {
+      display: block;
+      text-align: center;
+    }
+
+    .grid {
+      width: 75%;
+      height: 100%;
+      display: flex;  
+      position: relative;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .left, .middle, .right {
+      width: 100%;
+      height: auto;
+      font-size: 13px;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      margin: 10px auto;
+    }
+
+    .ca {
+      height: 55px;
+      padding-bottom: 65px;
+      position: relative;
+      top: 20px;
+      padding-left: 0;
+      margin-left: -20px;
+    }
+    
+    .gimp, .vc, .validator, .cp, .ct, .handbook, .dev, .cw {
+      margin-left: -20px;
+      margin-top: 20px;
+    }
+
+    .alink {
+      margin-left: -20px;
+    }
+
+    h6 {
+      visibility: hidden;
+     }
+  }

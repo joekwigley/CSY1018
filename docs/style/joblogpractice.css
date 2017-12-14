@@ -1,0 +1,429 @@
+/* page default reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Structure */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+.nav {
+  padding: 20px;
+  background: rgb(20, 20, 20);
+}
+
+.footer {
+  padding: 0.3em;
+  background: rgba(5, 5, 5, 0.8);
+  text-align: center;
+  border-top: 5px solid rgb(143, 143, 143);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.jobmain {
+  background: url('images/screen16.png') no-repeat;
+  background-position: left center;
+  background-size: 100%;
+}
+
+/* Navigation Bar */
+
+ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+.navigation li {
+  display: inline;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navigation li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li a:hover {
+  color: #976e5a
+}
+
+.navigation li:last-child {
+  border-right: none;
+}
+
+li.main-page a {
+  font-weight: bold;
+  color: #976e5a
+}
+
+/* Headings, Paragraphs & Content */
+
+/* Job Page */
+
+.grid {
+  height: 100%;
+  width: 58%;
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  float: right;
+  margin: 30px 20px 30px 0;
+}
+
+.left {
+  border-right: 1px solid black;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.middle {
+  border-right: 1px solid black;
+  padding: 20px 10px 10px 10px;
+
+}
+
+.right {
+  padding: 20px 10px 10px 10px;
+}
+
+h4 {
+  padding: 20px 10px 20px 5px;
+  text-align: left;
+  font-family: 'Adamina', serif;
+  font-style: italic;  
+}
+
+p {
+  font-size: 18px;
+  line-height: 19px;
+  text-align: left;
+  font-family: 'Rokkitt', serif;
+}
+
+.highlights {
+  font-size: 19px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.backpic {
+  width: 100%;
+  padding: 20px 0 10px 0;
+}
+
+.job-links {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.hidden-bktop {
+  text-decoration: none;
+  float: right;
+  font-size: 13px;
+  color: #976e5a;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  visibility: hidden;
+}
+
+/* Log Page */
+
+.banner {
+  width: 100%;
+}
+.banner-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.log-container {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+.log-heading {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.log-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: 4px;
+}
+
+.so-what {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.picture-heading {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Karla', sans-serif; 
+}
+
+.list {
+  padding-left: 50px;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.bullet {
+  padding-left: 20px;
+}
+
+.images {
+  width: 100%;
+}
+
+.bktop {
+  text-decoration: none;
+  float: right;
+  font-size: 13px;
+  color: #976e5a;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  margin-right: 40px;
+}
+
+h6 {
+  float: left;
+  font-size: 10px;
+  color: rgb(143, 143, 143);
+  text-align: left;
+  line-height: 14px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Practice Page */
+
+.practice-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.pimage-containers {
+  width: 30%;
+  margin: 40px 20px;
+  flex-direction: row;
+}
+
+.pimages {
+  width: 100%;
+}
+
+.descriptions {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  padding: 15px;
+  line-height: 20px;
+}
+
+/* Media Queries */
+/* Mobile Device */
+/* Mobile 30em = 480px */
+
+@media (max-width: 30em) {
+  .job-main, .log-main {
+    flex: 1 0 auto;
+  }
+}
+
+@media (min-width: 30em) {
+  .nav {
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+  
+  .job-main, .log-main{
+    flex: 1 1 auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .job-main, .log-main {
+    flex: 1 0 auto;
+  }
+  .nav {
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .navigation li {
+    display: block;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 0em;
+}
+  /* Job Page */
+
+  .jobmain {
+    background-color: white;
+    background-image: none;
+  }
+  
+  .grid {
+    height: 100%;
+    width: 100%;
+    display: flex;  
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    float: left;
+    margin: 30px 20px 50px 0;
+  }
+
+  .left {
+    border-right: none;
+    padding: 0 10px 10px 10px;
+  }
+  
+  .middle {
+    border-right: none;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .right {
+    padding: 20px 10px 10px 10px;
+  }
+
+  .hidden-bktop {
+    float: none;
+    visibility: visible;
+  }
+
+  .bktop {
+    float: none;
+    margin-right: 0;
+  }
+  
+
+  /* Log Page */
+
+.banner {
+  width: 100%;
+}
+.banner-image {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.log-container {
+  width: 91%;
+  padding: 15px;
+  float: left;
+  text-align: left;
+}
+
+.log-heading {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.log-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: 4px;
+}
+
+.so-what {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.picture-heading {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Karla', sans-serif;
+}
+
+.list {
+  padding-left: 50px;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.images {
+  width: 100%;
+}
+
+h6 {
+ visibility: hidden;
+}
+
+/* Practice Page */
+
+.practice-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.pimage-containers {
+  width: 90%;
+  margin: 15px auto;
+  flex-direction: row;
+}
+
+.pimages {
+  width: 100%;
+}
+
+.descriptions {
+  font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
+  padding: 10px;
+  line-height: 16px;
+}
+
+}
