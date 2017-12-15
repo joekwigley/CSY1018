@@ -356,30 +356,29 @@ h6 {
   padding: 15px;
   float: left;
   text-align: left;
-  background-color: red;
 }
 
 .log-heading {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .log-text {
   font-family: 'Karla', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  word-spacing: 3px;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: 4px;
 }
 
 .so-what {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   font-family: 'Fjalla One', sans-serif;
 }
 
 .picture-heading {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   font-family: 'Karla', sans-serif;
 }
