@@ -195,8 +195,6 @@ form {
 
 }
 
-
-
 /* Intelligent Footer */
 
 .intel-footer {
@@ -350,7 +348,7 @@ h6 {
   .container {
     margin: auto;
     height: 100%;
-    width: 280px;
+    width: 100%;
   }
 
   .index-text {
@@ -366,7 +364,7 @@ h6 {
   }
 
   .review-container {
-    width: 280px;
+    width: 100%;
     height: 100%;
     margin: auto;
     background-color: rgba(30,40,45, 0.8);
@@ -378,27 +376,29 @@ h6 {
 
   .intel-footer {
     bottom: 0;
-    position: fixed;
-    width: 100%;
-    height: 2em;
-    margin: 0 auto;
-    transition: all 3s ease;
+    position: relative;
+    max-width: 100%;
+    height: 15em;
+    margin: 0;
+    transition: none;
     z-index: 2;
+    background-color: rgb(30,40,45);
   }
      
   .intel-footer .fa-arrow-circle-up {   /* Code Forked From Code-Pen in Liz's Lecture. Code changed and tweaked to my requirements */
-    font-size: 2em;
-    margin: 0 auto;
+    font-size: 0;
+    margin: 0;
     position: relative;
-    transition: all 1s ease;
+    transition: none;
     color: #976e5a;
     visibility: hidden;
-    
+    background-color: rgb(30,40,45);
   }
     
-  .intel-footer:hover {
-    transition: all 3s ease;
-    height: 20em;
+  .intel-footer:hover:none {
+    transition: none;
+    max-width: 100%;
+    background-color: rgb(30,40,45);
   }
     
   .intel-footer .footer-container {
