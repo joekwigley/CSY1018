@@ -253,7 +253,6 @@ table, th, td {
  border-bottom: 2px solid #E5E4E2;
  border-collapse: collapse;
  font-family: Helvetica, sans-serif;
- 
 }
 
 table, th, td:last-child {
@@ -339,6 +338,7 @@ h6 {
     display: block;
     text-align: center;
   }
+
 
 /* Index */
   .index-main {
@@ -453,13 +453,15 @@ h6 {
   }
 
 /* Glossary */
+
   .glossary-main {
     background: url('images/screen7320480.jpeg') no-repeat center fixed;
+    padding: 0.5em;
     background-size: cover;
   }
   .table {
-    width: 0%;
-    margin: auto;
+    width: 0;
+    margin: 0;
   }
 
   td {
