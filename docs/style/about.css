@@ -86,7 +86,7 @@
 
 h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: right;
   position: relative;
   margin-right: 30px;
@@ -116,7 +116,6 @@ p {
   float: left;
   display: flex;
   flex-direction: column;
-  margin-top: -24px;
  }
 
  .matsbiog {
@@ -138,8 +137,7 @@ p {
 }
 
  .matsimage-container {
-  width: 9.1em;
-  max-height: 100%;
+  width: 9em;
   position: relative;
   float: left;
   display: flex;

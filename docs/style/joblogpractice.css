@@ -149,7 +149,7 @@ p {
 
 /* Log Page */
 
-.banner {
+.log-banner {
   background: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -161,11 +161,6 @@ p {
     min-height: 100vh;
 }
 
-/* .banner-image {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
-} */
 
 .log-container {
   margin: auto;
@@ -267,12 +262,6 @@ h6 {
 /* Mobile Device */
 /* Mobile 30em = 480px */
 
-@media (max-width: 30em) {
-  .job-main, .log-main {
-    flex: 1 0 auto;
-  }
-}
-
 @media (min-width: 30em) {
   .nav {
     display: block;
@@ -282,15 +271,9 @@ h6 {
     flex-direction: row;
   }
   
-  .job-main, .log-main{
-    flex: 1 1 auto;
-  }
 }
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .job-main, .log-main {
-    flex: 1 0 auto;
-  }
+ 
   .nav {
     display: block;
   }
@@ -351,14 +334,19 @@ h6 {
 
   /* Log Page */
 
-.banner {
-  width: 100%;
+.log-banner {
+  background: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: green;
 }
-/* .banner-image {
-  width: 100%;
-  height: 100%;
-  float: left;
-} */
+  
+#log-ban {
+  background-image: url("images/logbanner320480.jpg");
+  min-height: 40vh;
+}
+  
 
 .log-container {
   width: 91%;
