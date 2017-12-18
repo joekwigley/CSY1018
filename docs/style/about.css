@@ -184,12 +184,6 @@ p {
     
 /* Media Queries */
 /* Mobile Device */
-@media (max-width: 30em) {
-  .joe-main, .mat-main {
-    flex: 1 0 auto;
-  }
-}
-
 
 @media (min-width: 30em) {
   .nav {
@@ -199,16 +193,11 @@ p {
   .wrapper {
     flex-direction: row;
   }
-  
-  .joe-main, .mat-main {
-    flex: 1 1 auto;
-  }
 }
 
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .joe-main, .mat-main {
-    flex: 1 0 auto;
-  }
+
   .nav {
     display: block;
   }
@@ -286,7 +275,7 @@ p {
     width: 100%;
     padding: 10px 10px 0 10px;
     margin-left: 20px;
-    margin-top: 100px;
+    margin-top: 20px;
     position: relative;
   }
   
@@ -328,9 +317,10 @@ p {
   .facebook, .twitter, .instagram {
   height: 30px;
   border-radius: 5px;
-  margin: 0 15px;
-  top: 20px;
+  margin: 10px 0 10px 10px;
+  top: 0;
   position: relative;
   float: none;
   }
+
 }

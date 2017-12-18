@@ -75,16 +75,16 @@ li.main-page a {
  /* grid content */
 
  .grid {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: grid;  
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 0%;
     grid-row-gap: 10%;
     justify-content: center;
     align-content: center;
-    margin-top: 2%;
+    margin: 2% auto;
   }
   
   .left {
@@ -95,14 +95,13 @@ li.main-page a {
     padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 5%;
   }
   
   .ca {
     height: 65px;
-    padding-bottom: 75px;
+    padding-bottom: 55px;
     position: relative;
-    top: 30px;
   }
   
   .gimp {
@@ -123,7 +122,7 @@ li.main-page a {
     padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 5%;
   }
   
   .validator {
@@ -149,7 +148,7 @@ li.main-page a {
     padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 5%;
   }
   
   .handbook {
