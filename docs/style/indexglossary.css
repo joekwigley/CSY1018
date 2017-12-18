@@ -481,7 +481,7 @@ h6 {
     padding: 1px;
   }
 
-  td a:hover {
+  td a:hover:none {
     font-size: 10px;
     color: #976e5a;
    }
