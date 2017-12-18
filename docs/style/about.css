@@ -185,6 +185,13 @@ p {
 /* Media Queries */
 /* Mobile Device */
 
+@media (max-width: 30em) {
+  /*.joe-main, .mat-main {
+    flex: 1 0 auto;
+  }*/
+}
+
+
 @media (min-width: 30em) {
   .nav {
     display: block;
@@ -193,8 +200,11 @@ p {
   .wrapper {
     flex-direction: row;
   }
+  
+  .joe-main, .mat-main{
+    flex: 1 1 auto;
+  }
 }
-
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -231,6 +241,7 @@ p {
     margin: auto;
     margin-left: 10px;
     line-height: 1.5em;
+    visibility: hidden;
   }
 
   p {
