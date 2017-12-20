@@ -36,9 +36,9 @@ body {
 }
 
 .jobmain {
-  background: url('images/screen16.png') no-repeat;
+  background: url('images/sidebanner.jpeg') no-repeat;
   background-position: left center;
-  background-size: 100%;
+  background-size: 40%;
 }
 
 /* Navigation Bar */
@@ -420,5 +420,73 @@ h6 {
   padding: 10px;
   line-height: 16px;
 }
+
+}
+
+@media only screen and (max-width: 1575px) {
+  .jobmain {
+    background: none;
+    background-position: left center;
+    background-size: 41%;
+  }
+
+  .grid {
+    height: 80%;
+    width: 80%;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    float: none;
+    margin: 20px auto;
+  }
+
+  .left {
+    border-right: 1px solid black;
+    padding: 0 20px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .middle {
+    border-right: 1px solid black;
+    padding: 20px 20px 10px 20px;
+  
+  }
+  
+  .right {
+    padding: 20px 20px 10px 20px;
+  }
+  
+
+  h4 {
+    padding: 20px 5px 20px 5px;
+    text-align: left;
+    font-family: 'Adamina', serif;
+    font-style: italic;  
+    font-size: 26px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 21px;
+    text-align: left;
+    font-family: 'Rokkitt', serif;
+  }
+  
+  .highlights {
+    font-size: 21px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .backpic {
+    width: 100%;
+    padding: 20px 0 10px 0;
+  }
+  
+  .job-links {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+  }
 
 }
