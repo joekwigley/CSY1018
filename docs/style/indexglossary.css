@@ -47,6 +47,12 @@ body {
   background-size: cover;
 }
 
+.pnf-main {
+  padding: 1em;
+  background: url('images/error.png') no-repeat center fixed;
+  background-size: cover;
+}
+
 
 /* Navigation Bar */
 
@@ -232,6 +238,11 @@ form {
   background-color: rgb(30,40,45);
 }
 
+/* Page Not Found */
+
+.error1, .error2, .error3 {
+  visibility: hidden;
+}
 
 /* Glossary */
 
@@ -302,7 +313,7 @@ h6 {
 /* Mobile Device */
 
 @media (max-width: 30em) {
-  .glossary-main, .index-main {
+  .pnf-main, .glossary-main, .index-main {
     flex: 1 0 auto;
   }
 }
@@ -317,13 +328,13 @@ h6 {
     flex-direction: row;
   }
   
-  .glossary-main, .index-main{
+  .pnf-main, .glossary-main, .index-main{
     flex: 1 1 auto;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .glossary-main, .index-main {
+  .pnf-main, .glossary-main, .index-main {
     flex: 1 0 auto;
   }
   .nav {
@@ -345,6 +356,13 @@ h6 {
     background: url('images/outside320480.jpg') no-repeat center fixed;
     background-size: cover;
   }
+
+  .pnf-main {
+    background: url('images/error320480.png') no-repeat center fixed;
+    background-size: cover;
+    width: 80%;
+  }
+
   .container {
     margin: auto;
     height: 100%;
@@ -450,6 +468,28 @@ h6 {
     height: 5%;
     font-size: 14px;
     margin-left: 40px;  
+  }
+
+  /* Page Not Found */
+
+  .error1, .error2, .error3 {
+    visibility: visible;
+    float: left;
+    padding: 20px 0 20px 10px;
+    color: white;
+  }
+
+  .error1 {
+    font-size: 3em;
+  }
+
+  .error2 {
+    font-size: 1.4em;
+  }
+
+  .error3 {
+    font-size: 0.8em;
+    text-align: left;
   }
 
 /* Glossary */
