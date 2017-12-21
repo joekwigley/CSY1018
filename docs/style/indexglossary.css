@@ -240,9 +240,42 @@ form {
 
 /* Page Not Found */
 
-.error1, .error2, .error3 {
-  visibility: hidden;
+.error-box {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 50px 0 0 50px;
+  
 }
+
+.error1, .error2, .error3 {
+  float: left;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+}
+
+.error1 {
+  font-size: 100px;
+  padding: 20px 0 15px 20px;
+  line-height: 105px;
+}
+
+.error2 {
+  font-size: 30px;
+  padding: 10px 0 10px 20px;
+  line-height: 35px;
+  text-align: left;
+}
+
+.error3 {
+  font-size: 23px;
+  text-align: left;
+  padding: 10px 0 20px 20px;
+}
+
 
 /* Glossary */
 
@@ -472,24 +505,40 @@ h6 {
 
   /* Page Not Found */
 
-  .error1, .error2, .error3 {
-    visibility: visible;
+  .error-box {
+    width: 90%;
     float: left;
-    padding: 20px 0 20px 10px;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px 0 0 20px;  
   }
-
+  
+  .error1, .error2, .error3 {
+    float: left;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+  }
+  
   .error1 {
-    font-size: 3em;
+    font-size: 50px;
+    padding: 10px 0 7.5px 10px;
+    line-height: 55px;
   }
-
+  
   .error2 {
-    font-size: 1.4em;
-  }
-
-  .error3 {
-    font-size: 0.8em;
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+    line-height: 25px;
     text-align: left;
+  }
+  
+  .error3 {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 0 10px 10px;
+    line-height: 17px;
   }
 
 /* Glossary */
