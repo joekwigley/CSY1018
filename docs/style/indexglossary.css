@@ -570,10 +570,11 @@ h6 {
     padding: 1px;
   }
 
-  td a:hover:none {
+  td a:hover:none { /* Get Andrew to check this, see why its not workling */
     font-size: 10px;
     color: #976e5a;
    }
+
 
    h6 {
     visibility: hidden;
